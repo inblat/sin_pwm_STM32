@@ -1,0 +1,508 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+                              Startup/startup_stm32f407xx.o (__libc_init_array)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008000000 0x0000000000080000 xr
+RAM              0x0000000020000000 0x0000000000020000 xrw
+MEMORY_B1        0x0000000060000000 0x0000000000000000 xr
+CCMRAM           0x0000000010000000 0x0000000000010000 rw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crti.o
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+LOAD App/main.o
+LOAD CMSIS/system_stm32f4xx.o
+LOAD Startup/startup_stm32f407xx.o
+                0x0000000000000080                malloc_getpagesize_P = 0x80
+START GROUP
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libm.a
+END GROUP
+START GROUP
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/libgcc.a
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a
+END GROUP
+START GROUP
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/libgcc.a
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libnosys.a
+END GROUP
+START GROUP
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/libgcc.a
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libnosys.a
+END GROUP
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtend.o
+LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtn.o
+                0x0000000020020000                _estack = 0x20020000
+                0x0000000000000000                _Min_Heap_Size = 0x0
+                0x0000000000000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x0000000008000000      0x188
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000      0x188 Startup/startup_stm32f407xx.o
+                0x0000000008000000                g_pfnVectors
+                0x0000000008000188                . = ALIGN (0x4)
+
+.text           0x0000000008000188      0x718
+                0x0000000008000188                . = ALIGN (0x4)
+ *(.text)
+ .text          0x0000000008000188        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crti.o
+ .text          0x0000000008000188       0x40 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+ .text          0x00000000080001c8      0x4ac App/main.o
+                0x0000000008000260                clockConfig
+                0x0000000008000320                TIM1Config
+                0x00000000080004b0                TB_Wait
+                0x00000000080004dc                PMSM_SetPWM_UVW
+                0x0000000008000510                main
+                0x0000000008000570                SysTick_Handler
+ .text          0x0000000008000674      0x160 CMSIS/system_stm32f4xx.o
+                0x0000000008000674                SystemInit
+                0x00000000080006e0                SystemCoreClockUpdate
+ .text          0x00000000080007d4       0x14 Startup/startup_stm32f407xx.o
+ .text          0x00000000080007e8        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+ .text          0x00000000080007e8        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtend.o
+ .text          0x00000000080007e8        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtn.o
+ *(.text*)
+ .text.Reset_Handler
+                0x00000000080007e8       0x50 Startup/startup_stm32f407xx.o
+                0x00000000080007e8                Reset_Handler
+ .text.Default_Handler
+                0x0000000008000838        0x2 Startup/startup_stm32f407xx.o
+                0x0000000008000838                RTC_Alarm_IRQHandler
+                0x0000000008000838                HASH_RNG_IRQHandler
+                0x0000000008000838                EXTI2_IRQHandler
+                0x0000000008000838                TIM8_CC_IRQHandler
+                0x0000000008000838                DebugMon_Handler
+                0x0000000008000838                TIM1_CC_IRQHandler
+                0x0000000008000838                DMA2_Stream5_IRQHandler
+                0x0000000008000838                HardFault_Handler
+                0x0000000008000838                DMA1_Stream5_IRQHandler
+                0x0000000008000838                PVD_IRQHandler
+                0x0000000008000838                SDIO_IRQHandler
+                0x0000000008000838                TAMP_STAMP_IRQHandler
+                0x0000000008000838                PendSV_Handler
+                0x0000000008000838                NMI_Handler
+                0x0000000008000838                CAN2_RX1_IRQHandler
+                0x0000000008000838                EXTI3_IRQHandler
+                0x0000000008000838                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0000000008000838                TIM1_UP_TIM10_IRQHandler
+                0x0000000008000838                TIM8_UP_TIM13_IRQHandler
+                0x0000000008000838                I2C3_ER_IRQHandler
+                0x0000000008000838                EXTI0_IRQHandler
+                0x0000000008000838                I2C2_EV_IRQHandler
+                0x0000000008000838                DMA1_Stream2_IRQHandler
+                0x0000000008000838                CAN1_RX0_IRQHandler
+                0x0000000008000838                FPU_IRQHandler
+                0x0000000008000838                OTG_HS_WKUP_IRQHandler
+                0x0000000008000838                UsageFault_Handler
+                0x0000000008000838                CAN2_SCE_IRQHandler
+                0x0000000008000838                DMA2_Stream2_IRQHandler
+                0x0000000008000838                SPI1_IRQHandler
+                0x0000000008000838                TIM6_DAC_IRQHandler
+                0x0000000008000838                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008000838                DCMI_IRQHandler
+                0x0000000008000838                CAN2_RX0_IRQHandler
+                0x0000000008000838                DMA2_Stream3_IRQHandler
+                0x0000000008000838                USART6_IRQHandler
+                0x0000000008000838                USART3_IRQHandler
+                0x0000000008000838                CAN1_RX1_IRQHandler
+                0x0000000008000838                UART5_IRQHandler
+                0x0000000008000838                DMA2_Stream0_IRQHandler
+                0x0000000008000838                TIM4_IRQHandler
+                0x0000000008000838                I2C1_EV_IRQHandler
+                0x0000000008000838                DMA1_Stream6_IRQHandler
+                0x0000000008000838                DMA1_Stream1_IRQHandler
+                0x0000000008000838                UART4_IRQHandler
+                0x0000000008000838                TIM3_IRQHandler
+                0x0000000008000838                RCC_IRQHandler
+                0x0000000008000838                TIM8_BRK_TIM12_IRQHandler
+                0x0000000008000838                Default_Handler
+                0x0000000008000838                EXTI15_10_IRQHandler
+                0x0000000008000838                ADC_IRQHandler
+                0x0000000008000838                DMA1_Stream7_IRQHandler
+                0x0000000008000838                TIM7_IRQHandler
+                0x0000000008000838                CAN2_TX_IRQHandler
+                0x0000000008000838                TIM5_IRQHandler
+                0x0000000008000838                DMA2_Stream7_IRQHandler
+                0x0000000008000838                I2C3_EV_IRQHandler
+                0x0000000008000838                EXTI9_5_IRQHandler
+                0x0000000008000838                RTC_WKUP_IRQHandler
+                0x0000000008000838                ETH_WKUP_IRQHandler
+                0x0000000008000838                SPI2_IRQHandler
+                0x0000000008000838                OTG_HS_EP1_IN_IRQHandler
+                0x0000000008000838                MemManage_Handler
+                0x0000000008000838                DMA1_Stream0_IRQHandler
+                0x0000000008000838                CAN1_TX_IRQHandler
+                0x0000000008000838                SVC_Handler
+                0x0000000008000838                EXTI4_IRQHandler
+                0x0000000008000838                FSMC_IRQHandler
+                0x0000000008000838                ETH_IRQHandler
+                0x0000000008000838                OTG_HS_EP1_OUT_IRQHandler
+                0x0000000008000838                WWDG_IRQHandler
+                0x0000000008000838                TIM2_IRQHandler
+                0x0000000008000838                OTG_FS_WKUP_IRQHandler
+                0x0000000008000838                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008000838                OTG_HS_IRQHandler
+                0x0000000008000838                EXTI1_IRQHandler
+                0x0000000008000838                USART2_IRQHandler
+                0x0000000008000838                I2C2_ER_IRQHandler
+                0x0000000008000838                DMA2_Stream1_IRQHandler
+                0x0000000008000838                CAN1_SCE_IRQHandler
+                0x0000000008000838                FLASH_IRQHandler
+                0x0000000008000838                DMA2_Stream4_IRQHandler
+                0x0000000008000838                BusFault_Handler
+                0x0000000008000838                USART1_IRQHandler
+                0x0000000008000838                OTG_FS_IRQHandler
+                0x0000000008000838                SPI3_IRQHandler
+                0x0000000008000838                DMA1_Stream4_IRQHandler
+                0x0000000008000838                I2C1_ER_IRQHandler
+                0x0000000008000838                DMA2_Stream6_IRQHandler
+                0x0000000008000838                DMA1_Stream3_IRQHandler
+ *fill*         0x000000000800083a        0x2 
+ .text.__libc_init_array
+                0x000000000800083c       0x48 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+                0x000000000800083c                __libc_init_array
+ *(.glue_7)
+ .glue_7        0x0000000008000884        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000008000884        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x0000000008000884        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+ .eh_frame      0x0000000008000884        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtend.o
+ *(.init)
+ .init          0x0000000008000888        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crti.o
+                0x0000000008000888                _init
+ .init          0x000000000800088c        0x8 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtn.o
+ *(.fini)
+ .fini          0x0000000008000894        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crti.o
+                0x0000000008000894                _fini
+ .fini          0x0000000008000898        0x8 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtn.o
+                0x00000000080008a0                . = ALIGN (0x4)
+                0x00000000080008a0                _etext = .
+
+.vfp11_veneer   0x00000000080008a0        0x0
+ .vfp11_veneer  0x00000000080008a0        0x0 linker stubs
+
+.v4_bx          0x00000000080008a0        0x0
+ .v4_bx         0x00000000080008a0        0x0 linker stubs
+
+.iplt           0x00000000080008a0        0x0
+ .iplt          0x00000000080008a0        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+
+.rodata         0x00000000080008a0      0x258
+                0x00000000080008a0                . = ALIGN (0x4)
+ *(.rodata)
+ .rodata        0x00000000080008a0      0x240 App/main.o
+ .rodata        0x0000000008000ae0       0x18 CMSIS/system_stm32f4xx.o
+                0x0000000008000ae0                AHBPrescTable
+                0x0000000008000af0                APBPrescTable
+ *(.rodata*)
+                0x0000000008000af8                . = ALIGN (0x4)
+
+.rel.dyn        0x0000000008000af8        0x0
+ .rel.iplt      0x0000000008000af8        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x0000000008000af8        0x0
+                0x0000000008000af8                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008000af8                __exidx_end = .
+
+.preinit_array  0x0000000008000af8        0x0
+                0x0000000008000af8                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x0000000008000af8                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000008000af8        0x4
+                0x0000000008000af8                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+ .init_array    0x0000000008000af8        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+                0x0000000008000afc                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000008000afc        0x4
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x0000000008000afc        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end, .)
+                0x0000000008000b00                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000        0xc load address 0x0000000008000b00
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ .data          0x0000000020000000        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crti.o
+ .data          0x0000000020000000        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+                0x0000000020000000                __dso_handle
+ .data          0x0000000020000004        0x2 App/main.o
+                0x0000000020000004                PMSM_PWM
+ *fill*         0x0000000020000006        0x2 
+ .data          0x0000000020000008        0x4 CMSIS/system_stm32f4xx.o
+                0x0000000020000008                SystemCoreClock
+ .data          0x000000002000000c        0x0 Startup/startup_stm32f407xx.o
+ .data          0x000000002000000c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+ .data          0x000000002000000c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtend.o
+ .data          0x000000002000000c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtn.o
+ *(.data*)
+                0x000000002000000c                . = ALIGN (0x4)
+                0x000000002000000c                _edata = .
+                0x0000000008000b0c                _siccmram = LOADADDR (.ccmram)
+
+.igot.plt       0x000000002000000c        0x0 load address 0x0000000008000b0c
+ .igot.plt      0x000000002000000c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+
+.ccmram         0x0000000010000000        0x0 load address 0x0000000008000b0c
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _sccmram = .
+ *(.ccmram)
+ *(.ccmram*)
+                0x0000000010000000                . = ALIGN (0x4)
+                0x0000000010000000                _eccmram = .
+                0x0000000010000000                . = ALIGN (0x4)
+
+.bss            0x000000002000000c       0x20
+                0x000000002000000c                _sbss = .
+                0x000000002000000c                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x000000002000000c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crti.o
+ .bss           0x000000002000000c       0x1c /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+ .bss           0x0000000020000028        0x4 App/main.o
+                0x0000000020000028                PMSM_SinTableIndex
+                0x0000000020000029                PMSM_MotorSpin
+ .bss           0x000000002000002c        0x0 CMSIS/system_stm32f4xx.o
+ .bss           0x000000002000002c        0x0 Startup/startup_stm32f407xx.o
+ .bss           0x000000002000002c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+ .bss           0x000000002000002c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtend.o
+ .bss           0x000000002000002c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtn.o
+ *(.bss*)
+ *(COMMON)
+                0x000000002000002c                . = ALIGN (0x4)
+                0x000000002000002c                _ebss = .
+                0x000000002000002c                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x000000002000002c      0x400
+                0x000000002000002c                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (end, .)
+                [!provide]                        PROVIDE (_end, .)
+                0x000000002000002c                . = (. + _Min_Heap_Size)
+                0x000000002000042c                . = (. + _Min_Stack_Size)
+ *fill*         0x000000002000002c      0x400 
+                0x000000002000042c                . = ALIGN (0x4)
+
+.memory_b1_text
+ *(.mb1text)
+ *(.mb1text*)
+ *(.mb1rodata)
+ *(.mb1rodata*)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x30
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x22 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crti.o
+ .ARM.attributes
+                0x0000000000000022       0x34 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+ .ARM.attributes
+                0x0000000000000056       0x39 App/main.o
+ .ARM.attributes
+                0x000000000000008f       0x39 CMSIS/system_stm32f4xx.o
+ .ARM.attributes
+                0x00000000000000c8       0x21 Startup/startup_stm32f407xx.o
+ .ARM.attributes
+                0x00000000000000e9       0x34 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x000000000000011d       0x34 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtend.o
+ .ARM.attributes
+                0x0000000000000151       0x22 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtn.o
+OUTPUT(sin_pwm_f4.elf elf32-littlearm)
+
+.debug_info     0x0000000000000000     0x11b7
+ .debug_info    0x0000000000000000      0xc2d App/main.o
+ .debug_info    0x0000000000000c2d      0x4fe CMSIS/system_stm32f4xx.o
+ .debug_info    0x000000000000112b       0x8c Startup/startup_stm32f407xx.o
+
+.debug_abbrev   0x0000000000000000      0x309
+ .debug_abbrev  0x0000000000000000      0x1e9 App/main.o
+ .debug_abbrev  0x00000000000001e9      0x10e CMSIS/system_stm32f4xx.o
+ .debug_abbrev  0x00000000000002f7       0x12 Startup/startup_stm32f407xx.o
+
+.debug_aranges  0x0000000000000000       0x68
+ .debug_aranges
+                0x0000000000000000       0x20 App/main.o
+ .debug_aranges
+                0x0000000000000020       0x20 CMSIS/system_stm32f4xx.o
+ .debug_aranges
+                0x0000000000000040       0x28 Startup/startup_stm32f407xx.o
+
+.debug_line     0x0000000000000000      0x46b
+ .debug_line    0x0000000000000000      0x230 App/main.o
+ .debug_line    0x0000000000000230      0x1bc CMSIS/system_stm32f4xx.o
+ .debug_line    0x00000000000003ec       0x7f Startup/startup_stm32f407xx.o
+
+.debug_str      0x0000000000000000      0xa13
+ .debug_str     0x0000000000000000      0x9bb App/main.o
+                                        0xa20 (size before relaxing)
+ .debug_str     0x00000000000009bb       0x58 CMSIS/system_stm32f4xx.o
+                                        0x390 (size before relaxing)
+
+.comment        0x0000000000000000       0x7c
+ .comment       0x0000000000000000       0x7c App/main.o
+                                         0x7d (size before relaxing)
+ .comment       0x000000000000007c       0x7d CMSIS/system_stm32f4xx.o
+
+.debug_frame    0x0000000000000000      0x1b0
+ .debug_frame   0x0000000000000000      0x12c App/main.o
+ .debug_frame   0x000000000000012c       0x58 CMSIS/system_stm32f4xx.o
+ .debug_frame   0x0000000000000184       0x2c /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+
+.debug_ranges   0x0000000000000000       0x20
+ .debug_ranges  0x0000000000000000       0x20 Startup/startup_stm32f407xx.o
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_IRQHandler                                    Startup/startup_stm32f407xx.o
+AHBPrescTable                                     CMSIS/system_stm32f4xx.o
+APBPrescTable                                     CMSIS/system_stm32f4xx.o
+BusFault_Handler                                  Startup/startup_stm32f407xx.o
+CAN1_RX0_IRQHandler                               Startup/startup_stm32f407xx.o
+CAN1_RX1_IRQHandler                               Startup/startup_stm32f407xx.o
+CAN1_SCE_IRQHandler                               Startup/startup_stm32f407xx.o
+CAN1_TX_IRQHandler                                Startup/startup_stm32f407xx.o
+CAN2_RX0_IRQHandler                               Startup/startup_stm32f407xx.o
+CAN2_RX1_IRQHandler                               Startup/startup_stm32f407xx.o
+CAN2_SCE_IRQHandler                               Startup/startup_stm32f407xx.o
+CAN2_TX_IRQHandler                                Startup/startup_stm32f407xx.o
+DCMI_IRQHandler                                   Startup/startup_stm32f407xx.o
+DMA1_Stream0_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA1_Stream1_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA1_Stream2_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA1_Stream3_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA1_Stream4_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA1_Stream5_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA1_Stream6_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA1_Stream7_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA2_Stream0_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA2_Stream1_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA2_Stream2_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA2_Stream3_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA2_Stream4_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA2_Stream5_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA2_Stream6_IRQHandler                           Startup/startup_stm32f407xx.o
+DMA2_Stream7_IRQHandler                           Startup/startup_stm32f407xx.o
+DebugMon_Handler                                  Startup/startup_stm32f407xx.o
+Default_Handler                                   Startup/startup_stm32f407xx.o
+ETH_IRQHandler                                    Startup/startup_stm32f407xx.o
+ETH_WKUP_IRQHandler                               Startup/startup_stm32f407xx.o
+EXTI0_IRQHandler                                  Startup/startup_stm32f407xx.o
+EXTI15_10_IRQHandler                              Startup/startup_stm32f407xx.o
+EXTI1_IRQHandler                                  Startup/startup_stm32f407xx.o
+EXTI2_IRQHandler                                  Startup/startup_stm32f407xx.o
+EXTI3_IRQHandler                                  Startup/startup_stm32f407xx.o
+EXTI4_IRQHandler                                  Startup/startup_stm32f407xx.o
+EXTI9_5_IRQHandler                                Startup/startup_stm32f407xx.o
+FLASH_IRQHandler                                  Startup/startup_stm32f407xx.o
+FPU_IRQHandler                                    Startup/startup_stm32f407xx.o
+FSMC_IRQHandler                                   Startup/startup_stm32f407xx.o
+HASH_RNG_IRQHandler                               Startup/startup_stm32f407xx.o
+HardFault_Handler                                 Startup/startup_stm32f407xx.o
+I2C1_ER_IRQHandler                                Startup/startup_stm32f407xx.o
+I2C1_EV_IRQHandler                                Startup/startup_stm32f407xx.o
+I2C2_ER_IRQHandler                                Startup/startup_stm32f407xx.o
+I2C2_EV_IRQHandler                                Startup/startup_stm32f407xx.o
+I2C3_ER_IRQHandler                                Startup/startup_stm32f407xx.o
+I2C3_EV_IRQHandler                                Startup/startup_stm32f407xx.o
+MemManage_Handler                                 Startup/startup_stm32f407xx.o
+NMI_Handler                                       Startup/startup_stm32f407xx.o
+OTG_FS_IRQHandler                                 Startup/startup_stm32f407xx.o
+OTG_FS_WKUP_IRQHandler                            Startup/startup_stm32f407xx.o
+OTG_HS_EP1_IN_IRQHandler                          Startup/startup_stm32f407xx.o
+OTG_HS_EP1_OUT_IRQHandler                         Startup/startup_stm32f407xx.o
+OTG_HS_IRQHandler                                 Startup/startup_stm32f407xx.o
+OTG_HS_WKUP_IRQHandler                            Startup/startup_stm32f407xx.o
+PMSM_MotorSpin                                    App/main.o
+PMSM_PWM                                          App/main.o
+PMSM_SetPWM_UVW                                   App/main.o
+PMSM_SinTableIndex                                App/main.o
+PVD_IRQHandler                                    Startup/startup_stm32f407xx.o
+PendSV_Handler                                    Startup/startup_stm32f407xx.o
+RCC_IRQHandler                                    Startup/startup_stm32f407xx.o
+RTC_Alarm_IRQHandler                              Startup/startup_stm32f407xx.o
+RTC_WKUP_IRQHandler                               Startup/startup_stm32f407xx.o
+Reset_Handler                                     Startup/startup_stm32f407xx.o
+SDIO_IRQHandler                                   Startup/startup_stm32f407xx.o
+SPI1_IRQHandler                                   Startup/startup_stm32f407xx.o
+SPI2_IRQHandler                                   Startup/startup_stm32f407xx.o
+SPI3_IRQHandler                                   Startup/startup_stm32f407xx.o
+SVC_Handler                                       Startup/startup_stm32f407xx.o
+SysTick_Handler                                   App/main.o
+SystemCoreClock                                   CMSIS/system_stm32f4xx.o
+                                                  App/main.o
+SystemCoreClockUpdate                             CMSIS/system_stm32f4xx.o
+                                                  App/main.o
+SystemInit                                        CMSIS/system_stm32f4xx.o
+                                                  Startup/startup_stm32f407xx.o
+TAMP_STAMP_IRQHandler                             Startup/startup_stm32f407xx.o
+TB_Wait                                           App/main.o
+TIM1Config                                        App/main.o
+TIM1_BRK_TIM9_IRQHandler                          Startup/startup_stm32f407xx.o
+TIM1_CC_IRQHandler                                Startup/startup_stm32f407xx.o
+TIM1_TRG_COM_TIM11_IRQHandler                     Startup/startup_stm32f407xx.o
+TIM1_UP_TIM10_IRQHandler                          Startup/startup_stm32f407xx.o
+TIM2_IRQHandler                                   Startup/startup_stm32f407xx.o
+TIM3_IRQHandler                                   Startup/startup_stm32f407xx.o
+TIM4_IRQHandler                                   Startup/startup_stm32f407xx.o
+TIM5_IRQHandler                                   Startup/startup_stm32f407xx.o
+TIM6_DAC_IRQHandler                               Startup/startup_stm32f407xx.o
+TIM7_IRQHandler                                   Startup/startup_stm32f407xx.o
+TIM8_BRK_TIM12_IRQHandler                         Startup/startup_stm32f407xx.o
+TIM8_CC_IRQHandler                                Startup/startup_stm32f407xx.o
+TIM8_TRG_COM_TIM14_IRQHandler                     Startup/startup_stm32f407xx.o
+TIM8_UP_TIM13_IRQHandler                          Startup/startup_stm32f407xx.o
+UART4_IRQHandler                                  Startup/startup_stm32f407xx.o
+UART5_IRQHandler                                  Startup/startup_stm32f407xx.o
+USART1_IRQHandler                                 Startup/startup_stm32f407xx.o
+USART2_IRQHandler                                 Startup/startup_stm32f407xx.o
+USART3_IRQHandler                                 Startup/startup_stm32f407xx.o
+USART6_IRQHandler                                 Startup/startup_stm32f407xx.o
+UsageFault_Handler                                Startup/startup_stm32f407xx.o
+WWDG_IRQHandler                                   Startup/startup_stm32f407xx.o
+__deregister_frame_info                           /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+__dso_handle                                      /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+__init_array_end                                  /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+__init_array_start                                /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+__libc_init_array                                 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+                                                  Startup/startup_stm32f407xx.o
+__preinit_array_end                               /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+__preinit_array_start                             /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+__register_frame_info                             /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+_ebss                                             Startup/startup_stm32f407xx.o
+_edata                                            Startup/startup_stm32f407xx.o
+_estack                                           Startup/startup_stm32f407xx.o
+_fini                                             /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crti.o
+_init                                             /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crti.o
+                                                  /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-init.o)
+_sbss                                             Startup/startup_stm32f407xx.o
+_sdata                                            Startup/startup_stm32f407xx.o
+_sidata                                           Startup/startup_stm32f407xx.o
+clockConfig                                       App/main.o
+g_pfnVectors                                      Startup/startup_stm32f407xx.o
+main                                              App/main.o
+                                                  Startup/startup_stm32f407xx.o
