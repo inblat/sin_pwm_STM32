@@ -7,7 +7,6 @@
 
 #include "main.h"
 
-
 #define PMSM_CW		0
 #define PMSM_CCW	1
 
@@ -255,6 +254,7 @@ int main(void)
 
 			TB_Wait(500);
 			GPIOA->ODR ^= GPIO_ODR_OD6;
+
 		}
 
 }
